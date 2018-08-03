@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Exemplo Bootstrap</title>
+    <title>Carrinho</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,8 +15,8 @@
   <body style="background-color: #CEF6F5">
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2ECCFA">
-      <img src="leão.png" style="width: 150px;">
-      <h2 class="text-center" style="font-family: harrington">Aslan</h2>
+      <img src="git.jpg" style="width: 100px; border-radius: 80px;">
+      <h2 class="text-center pl-2" style="font-family: harrington">Aslan</h2>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,18 +36,26 @@
         </li>
 
         <li class="nav-item active">
-          <a class="nav-link" href="Carrinho.html">Carrinho de Compras</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopus="true" aria-expanded="false">Carrinho</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="carrinho.html">Adcionar</a>
+            <a class="dropdown-item" href="carrinho1.html">Enviando</a>
+          </div>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="Pagamento.html">Pagamento</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopus="true" aria-expanded="false">Pagamento</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="pagamento.html">Ramificando</a>
+            <a class="dropdown-item" href="pagamento1.html">Atualizar</a>
+          </div>
         </li>
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Áreas de Compra</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="Compra1.html">Livros</a>
-            <a class="dropdown-item" href="Compra2.html">Box de Séries</a>
+            <a class="dropdown-item" href="Compra1.html">Rotulando</a>
+            <a class="dropdown-item" href="Compra2.html">Sobrescrever</a>
           </div>
         </li>
       </ul>
@@ -55,7 +63,7 @@
 
      <div class="container pt-3">
 
-      <img src="leão.png" style="width: 200px;" class=" mx-auto d-block">
+      <img src="git.jpg" style="width: 200px; border-radius: 100px;" class=" mx-auto d-block">
       <h2 class="text-center">Seu carrinho</h2>
       
       <ul class="list-group pt-3">
