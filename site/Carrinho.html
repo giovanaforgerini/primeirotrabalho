@@ -15,8 +15,8 @@
   <body style="background-color: #CEF6F5">
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2ECCFA">
-      <img src="git.jpg" style="width: 100px; border-radius: 80px;">
-      <h2 class="text-center pl-2" style="font-family: harrington">Aslan</h2>
+      <img src="git.png" style="width: 100px; border-radius: 50px; background-color: #2ECCFA" class="d-inline-block align-top">
+      <h2 class="text-center pl-2" style="font-family: harrington">GIT</h2>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,59 +35,47 @@
           <a class="nav-link" href="Login.html">Login</a>
         </li>
 
-        <li class="nav-item active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopus="true" aria-expanded="false">Carrinho</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="carrinho.html">Adcionar</a>
-            <a class="dropdown-item" href="carrinho1.html">Enviando</a>
-          </div>
+       <li class="nav-item">
+          <a class="nav-link" href="carrinho.html">Terceiro passo</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopus="true" aria-expanded="false">Pagamento</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="pagamento.html">Ramificando</a>
-            <a class="dropdown-item" href="pagamento1.html">Atualizar</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="pagamento.html">Quarto passo</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Áreas de Compra</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="Compra1.html">Rotulando</a>
-            <a class="dropdown-item" href="Compra2.html">Sobrescrever</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="compra1.html">Quinto passo</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="compra2.html">Sexto passo</a>
         </li>
       </ul>
     </nav>
 
      <div class="container pt-3">
 
-      <img src="git.jpg" style="width: 200px; border-radius: 100px;" class=" mx-auto d-block">
-      <h2 class="text-center">Seu carrinho</h2>
+      <img src="git.png" style="width: 200px; border-radius: 100px;" class=" mx-auto d-block pb-3">
       
-      <ul class="list-group pt-3">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            <img src="ws.jpg" style="height: 100px;">
-            Tempestade de Guerra
-            <span class="badge badge-primary badge-pill">39,90</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            <img src="vikings.png" style="height: 100px;">
-            Box Vikings
-            <span class="badge badge-primary badge-pill">349,90</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center active">
-            Total
-            <span class="badge badge-primary badge-pill">389,80</span>
-          </li>
-        </ul>
-
-
-      <div class="text-center pt-3">
-        <a href="Compra1.html" class="text-center">Quer continuar comprando livros? Clique aqui!</a><br>
-        <a href="Compra2.html" class="text-center">Quer continuar comprando os boxs das suas séries favoritas? Clique aqui!</a>
+      <div class="card mb-4" style="width: 100%; text-align: center; height: 250px;">
+        <div class="card-body">
+          <h5 class="card-title">Adicionar e confirmar</h5>
+          <p class="card-text">Você pode propor mudanças (adicioná-las ao Index) usando <b>git add arquivo</b> <b>git add *</b></p>
+          <p>Este é o primeiro passo no fluxo de trabalho básico do git.</p>
+          <p>Para realmente confirmar estas mudanças (isto é, fazer um commit), use <b>git commit -m "comentários das alterações"</b></p>
+          <p>Agora o arquivo é enviado para o <b>HEAD</b>, mas ainda não para o repositório remoto.</p>
+        </div>
       </div>
+        <div class="card" style="width: 100%; text-align: center; height: 300px;">
+          <div class="card-body pt-3">
+            <h5 class="card-title">Enviando alterações</h5>
+            <p class="card-text">Suas alterações agora estão no <b>HEAD</b> da sua cópia de trabalho local.</p>
+            <p>Para enviar estas alterações ao seu repositório remoto, execute <b>git push origin master</b>.</p>
+            <p>Altere master para qualquer ramo (branch) desejado, enviando suas alterações para ele.</p>
+            <p>Se você não clonou um repositório existente e quer conectar seu repositório a um servidor remoto, você deve adicioná-lo com <b>git remote add origin servidor</b>.</p>
+            <p>Agora você é capaz de enviar suas alterações para o servidor remoto selecionado.</p>
+          </div>
+        </div>
     </div>    
 
     

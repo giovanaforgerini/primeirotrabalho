@@ -16,8 +16,8 @@
 
   
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2ECCFA">
-      <img src="git.jpg" style="width: 100px; border-radius: 80px;" class="d-inline-block align-top">
-        <h2 class="text-center pl-2" style="font-family: harrington">Aslan</h2>
+      <img src="git.png" style="width: 100px; border-radius: 80px;" class="d-inline-block align-top">
+        <h2 class="text-center pl-2" style="font-family: harrington">GIT</h2>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,28 +36,20 @@
           <a class="nav-link" href="Login.html">Login</a>
         </li>
 
-        <li class="nav-item active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopus="true" aria-expanded="false">Carrinho</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="carrinho.html">Adcionar</a>
-            <a class="dropdown-item" href="carrinho1.html">Enviando</a>
-          </div>
+       <li class="nav-item">
+          <a class="nav-link" href="Carrinho.html">Terceiro passo</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopus="true" aria-expanded="false">Pagamento</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="pagamento.html">Ramificando</a>
-            <a class="dropdown-item" href="pagamento1.html">Atualizar</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="Pagamento.html">Quarto passo</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Áreas de Compra</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="Compra1.html">Rotulando</a>
-            <a class="dropdown-item" href="Compra2.html">Sobrescrever</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="Compra1.html">Quinto passo</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Compra2.html">Sexto passo</a>
         </li>
       </ul>
     </nav>
@@ -65,101 +57,26 @@
     <div class="container pt-3">
 
       <form>
-        <img src="git.jpg" style="width: 200px; border-radius: 100px;" class=" mx-auto d-block">
-        <h2 class="text-center">Pagamento</h2>
-        <p class="text-center">Obs: a única forma de pagamento aceita é cartão de crédito!</p>
-
-        <h5>Escolha a marca do seu cartão</h5>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline1"><img src="visa.png" style="width: 100px;"></label>
+        <img src="git.png" style="width: 200px; border-radius: 100px;" class="mx-auto d-block pb-3">
+        
+        <div class="card mb-4" style="width: 100%; text-align: center; height: 300px;">
+        <div class="card-body">
+          <h5 class="card-title">Ramificando</h5>
+          <p class="card-text">Branches ("ramos") são utilizados para desenvolver funcionalidades isoladas umas das outras.</p>
+          <p>O branch master é o branch "padrão" quando você cria um repositório.</p>
+          <p> Use outros branches para desenvolver e mescle-os (merge) ao branch master após a conclusão.</p>
+          <p>crie um novo branch chamado "funcionalidade_x" e selecione-o usando <b>git checkout -b funcionalidade_x</b>.</p>
+          <p>retorne para o master usando <b>git checkout master</b> e remova o branch da seguinte forma <b>git branch -d funcionalidade_x</b>.</p>
+          <p>um branch não está disponível a outros a menos que você envie o branch para seu repositório remoto <b>git push origin funcionalidade_x</b>.</p>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline2"><img src="master.png" style="width: 100px"></label>
-        </div>
-          <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline3"><img src="diners.png" style="width: 100px"></label>
-        </div>
-
-        <div class="form-row pt-3">
-          <div class="col">
-            <h5>Número do Cartão</h5>
-            <input type="text" class="form-control">
-          </div>
-        </div>
-        <div class="form-row pt-3">
-          <div class="col">
-            <h5>Nome como escrito no Cartão</h5>
-            <input type="text" class="form-control">
-          </div>
-        </div>
-        <div class="form-row pt-3">
-          <div class="col">
-              <h5>Mês de Vencimento do Cartão</h5>
-                <select id="inputState" class="form-control">
-                  <option selected>Escolha</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                  <option>11</option>
-                  <option>12</option>
-                </select>
-          </div>
-          <div class="col">
-              <h5>Ano de Vencimento do Cartão</h5>
-                <select id="inputState" class="form-control">
-                  <option selected>Escolha</option>
-                  <option>2018</option>
-                  <option>2019</option>
-                  <option>2020</option>
-                  <option>2021</option>
-                  <option>2022</option>
-                  <option>2023</option>
-                  <option>2024</option>
-                  <option>2025</option>
-                </select>
-          </div>
-          <div class="col">
-            <h5>CSC</h5>
-            <input type="text" class="form-control">
-          </div>
-          <div class="col">
-            <h5>CPF do dono do cartão</h5>
-            <input type="text" class="form-control">
-          </div>
-        </div>
-
-        <div class="form-row pt-3">
-          <div class="col">
-            <h5>Endereço</h5>
-            <input type="text" class="form-control">
-          </div>
-          <div class="col">
-            <h5>CEP</h5>
-            <input type="text" class="form-control">
-          </div>
-        </div>   
-
-        <div class="form-row pt-3">
-          <div class="col">
-            <h5>Pagar em</h5>
-            <select id="inputParcelas" class="form-control">
-                  <option selected>Escolha as parcelas</option>
-                  <option>1 x sem juros de R$389,80</option>
-                  <option>2 x sem juros de R$194,90</option>
-                  <option>3 x com juros de R$130,40</option>
-                  <option>4 x sem juros de R$97,45</option>
-                </select>
-
+      </div>
+        <div class="card" style="width: 100%; text-align: center; height: 300px;">
+          <div class="card-body pt-3">
+            <h5 class="card-title">Atualizar e mesclar</h5>
+            <p class="card-text">para atualizar seu repositório local com a mais nova versão, execute <b>git pull</b>na sua pasta de trabalho para obter e fazer merge (mesclar) alterações remotas.</p>
+            <p>para fazer merge de um outro branch ao seu branch ativo (ex. master), use <b>git merge branch</b> em ambos os casos o git tenta fazer o merge das alterações automaticamente.</p>
+            <p>Infelizmente, isto nem sempre é possível e resulta em conflitos. Você é responsável por fazer o merge estes conflitos manualmente editando os arquivos exibidos pelo git.</p>
+            <p>Depois de alterar, você precisa marcá-los como merged com <b>git add arquivo</b> antes de fazer o merge das alterações, você pode também pré-visualizá-as usando <b>git diff "branch origem" "branch destino"</b></p>
           </div>
         </div>
 
